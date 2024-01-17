@@ -1,0 +1,28 @@
+{
+  "Noticias": [
+    {
+      "titulo": "Título da Notícia 1",
+      "summary": "Resumo da notícia 1",
+      "img": "http://[::1]:5173/storage/app/public/img/net.jpg",
+      "autor": "clecyo7"
+    },
+    {
+      "titulo": "Título da Notícia 2",
+      "summary": "Resumo da notícia 2",
+      "img": "http://[::1]:5173/storage/app/public/img/cadeado.jpg",
+      "autor": "clecyo7"
+    },
+    {
+      "titulo": "Título da Notícia 3",
+      "summary": "Resumo da notícia 3",
+      "img": "http://[::1]:5173/storage/app/public/img/jogos.jpg",
+      "autor": "clecyo7"
+    },
+    {
+      "titulo": "Título da Notícia 4",
+      "summary": "Resumo da notícia 4",
+      "img": "http://[::1]:5173/storage/app/public/img/casal.jpg",
+      "autor": "clecyo7"
+    }
+  ]
+}
