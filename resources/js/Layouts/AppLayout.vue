@@ -49,12 +49,26 @@ const logout = () => {
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
+                                    Painel
                                 </NavLink>
                                 <NavLink :href="route('company')" :active="route().current('company')">
                                     Clinica
                                 </NavLink>
-                               
+                                <NavLink >
+                                    Agenda
+                                </NavLink>
+                                <NavLink>
+                                    Consultas
+                                </NavLink>
+                                <NavLink>
+                                    Pacientes
+                                </NavLink>
+                                <NavLink>
+                                    Administração
+                                </NavLink>
+                                <NavLink>
+                                    Configurações
+                                </NavLink>
                             </div>
                         </div>
 
@@ -143,7 +157,7 @@ const logout = () => {
                                         </div>
 
                                         <DropdownLink :href="route('profile.show')">
-                                            Profile
+                                            Perfil
                                         </DropdownLink>
 
                                         <DropdownLink v-if="$page.props.jetstream.hasApiFeatures" :href="route('api-tokens.index')">
@@ -155,7 +169,7 @@ const logout = () => {
                                         <!-- Authentication -->
                                         <form @submit.prevent="logout">
                                             <DropdownLink as="button">
-                                                Log Out
+                                                Sair
                                             </DropdownLink>
                                         </form>
                                     </template>

@@ -29,11 +29,12 @@ class User extends Authenticatable
         'cpf',
         'date_birth',
         'specialty',
-        'number_registro',
+        'number_register',
         'uf',
         'naturalness',
         'uf_birth',
         'password',
+        
     ];
 
     /**

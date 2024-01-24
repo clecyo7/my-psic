@@ -35,8 +35,8 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::get('company', CompanyController::class, 'index');
-   // Route::get('/company', [CompanyController::class, 'getCompany'])->name('company');
+   // Route::get('company', CompanyController::class, 'index')->name('company');
+    Route::get('/company', [CompanyController::class, 'index'])->name('company');
 
 
 });
