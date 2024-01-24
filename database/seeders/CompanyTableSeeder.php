@@ -19,7 +19,7 @@ class CompanyTableSeeder extends Seeder
         DB::table('companies')->insert([
             'name' => 'My Psic',
             'description' => 'Descrição exemplo',
-            'email_tenant' => 'exemplo@email.com',
+            'email_company' => 'exemplo@email.com',
             'email_responsible' => 'responsavel@email.com',
             'phone' => '123456789',
             'cep' => '12345-678',

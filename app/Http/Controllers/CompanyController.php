@@ -15,7 +15,7 @@ class CompanyController extends Controller
     public function index()
     {
         $companies = Company::all();
-       // dd($companies);
+      // dd(auth()->user());
 
         return Inertia::render('Company/Index', ['companies' => $companies]);
     }

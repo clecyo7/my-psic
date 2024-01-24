@@ -30,6 +30,13 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'profile_photo_path' => null,
             'current_team_id' => null,
+            'cpf' => $this->faker->unique()->numerify('###########'), // Adjust as needed
+            'date_birth' => $this->faker->date(),
+            'specialty' => $this->faker->word, // Adjust as needed
+            'number_register' => $this->faker->unique()->numerify('###########'), // Adjust as needed
+            'uf' => $this->faker->stateAbbr,
+            'naturalness' => $this->faker->city, // Adjust as needed
+            'uf_birth' => $this->faker->stateAbbr,
         ];
     }
 

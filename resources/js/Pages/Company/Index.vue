@@ -40,7 +40,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                     </div>
                 </div>
 
-                <div class="border-b border-gray-900/10 pb-12">
+                <!--div class="border-b border-gray-900/10 pb-12">
                     <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
                     <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
 
@@ -119,6 +119,43 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                             </div>
                         </div>
                     </div>
+                </div -->
+                <!-- Current Profile Photo -->
+                <h1>painel</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/painel.png" class="">
+                </div>
+                <h1>agenda</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/agenda.png" class="">
+                </div>
+                <h1>novo Agendamento</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/novoAgendamento.png" class="">
+                </div>
+                <h1>buscar Agendamento</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/buscarAgendamento.png" class="">
+                </div>
+                <h1>Lista de Espera</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/listaEspera.png" class="">
+                </div>
+                <h1>Pacientes Aguardando</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/pacientesAguardando.png" class="">
+                </div>
+                <h1>consultas</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/consultas.png" class="">
+                </div>
+                <h1>pacientes</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/pacientes.png" class="">
+                </div>
+                <h1>clinica</h1>
+                <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../public/storage/sistema/dadosClinica.png" class="">
                 </div>
             </div>
         </div>
@@ -174,4 +211,5 @@ export default {
 
 .company-table th {
     background-color: #f2f2f2;
-}</style>
+}
+</style>
