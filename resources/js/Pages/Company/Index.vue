@@ -123,6 +123,10 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                 <!-- Current Profile Photo -->
                 <h1>painel</h1>
                 <div v-show="!photoPreview" class="mt-2">
+                    <img src="../../../../storage/app/public/sistema/painel.png" class="">
+                </div>
+                <h1>painel2</h1>
+                <div v-show="!photoPreview" class="mt-2">
                     <img src="../../../../public/storage/sistema/painel.png" class="">
                 </div>
                 <h1>agenda</h1>
