@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\Dashboard;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,12 +32,11 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
 
-   // Route::get('company', CompanyController::class, 'index')->name('company');
+    Route::get('/agenda', function () {
+        return Inertia::render('Agenda/Index');
+    })->name('agenda');
+
     Route::get('/company', [CompanyController::class, 'index'])->name('company');
-
-
+    Route::get('/dashboard', [Dashboard::class, 'graphic'])->name('dashboard');
 });

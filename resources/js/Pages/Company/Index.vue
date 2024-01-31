@@ -40,7 +40,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                     </div>
                 </div>
 
-                <!--div class="border-b border-gray-900/10 pb-12">
+                <div class="border-b border-gray-900/10 pb-12">
                     <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
                     <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
 
@@ -119,7 +119,8 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                             </div>
                         </div>
                     </div>
-                </div -->
+                </div>
+                
                 <!-- Current Profile Photo -->
                 <h1>painel</h1>
                 <div v-show="!photoPreview" class="mt-2">

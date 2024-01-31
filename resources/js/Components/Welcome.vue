@@ -6,6 +6,12 @@ import GraphConsultasCancelad from './GraphConsultasCancelad.vue';
 import Card from './Card.vue';
 
 export default {
+    props: {
+        userCount: {
+            type: Number,
+            default: 0
+        }
+    },
     components: {
         ApplicationLogo,
         GraphConvenios,
@@ -14,16 +20,13 @@ export default {
         Card
     },
 
-    props: [
-        'convenios'
-    ],
-
     data() {
+        console.log('Valor da propriedade userCount:', this.userCount);
         return {
             listCard: [
                 {
                     title: 'Pacientes cadastrados',
-                    count: 20,
+                    count: this.userCount,
                     color: 'green',
                     icon: 'ri-arrow-up-circle-fill'
                 },
@@ -66,7 +69,7 @@ export default {
                 ],
             },
             grafico3: {
-                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'], //this.convenios.labels
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
                 datasets: [
                     {
                         label: 'Consultas Finalizadas',
@@ -77,7 +80,6 @@ export default {
                     },
                 ],
             },
-
             options: {
                 scales: {
                     y: {
@@ -86,18 +88,20 @@ export default {
                 },
             },
             options2: {
-              ...this.options?.scales,
-              x: {
-              beginAtZero: true,
-            },
-            
+                x: {
+                    beginAtZero: true,
+                },
             }
-        }
-    }
+        };
+    },
 };
 </script>
 
 <template>
+    <div>
+          <p>Valor da propriedade graphic: {{ graphic }}</p>
+        <!-- Restante do seu código -->
+    </div>
     <div class="p-8 lg:p-10 bg-white border-b border-gray-200">
         <!--card consultas-->
         <div class="grid grid-cols-6 lg:grid-cols-12  md:grid-cols-6 gap-4">
