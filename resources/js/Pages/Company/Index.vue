@@ -128,39 +128,39 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                 </div>
                 <h1>painel2</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/painel.png" class="">
+                    <img src="../../../../public/sistema/painel.png" class="">
                 </div>
                 <h1>agenda</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/agenda.png" class="">
+                    <img src="../../../../public/sistema/agenda.png" class="">
                 </div>
                 <h1>novo Agendamento</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/novoAgendamento.png" class="">
+                    <img src="../../../../public/sistema/novoAgendamento.png" class="">
                 </div>
                 <h1>buscar Agendamento</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/buscarAgendamento.png" class="">
+                    <img src="../../../../public/sistema/buscarAgendamento.png" class="">
                 </div>
                 <h1>Lista de Espera</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/listaEspera.png" class="">
+                    <img src="../../../../public/sistema/listaEspera.png" class="">
                 </div>
                 <h1>Pacientes Aguardando</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/pacientesAguardando.png" class="">
+                    <img src="../../../../public/sistema/pacientesAguardando.png" class="">
                 </div>
                 <h1>consultas</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/consultas.png" class="">
+                    <img src="../../../../public/sistema/consultas.png" class="">
                 </div>
                 <h1>pacientes</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/pacientes.png" class="">
+                    <img src="../../../../public/sistema/pacientes.png" class="">
                 </div>
                 <h1>clinica</h1>
                 <div v-show="!photoPreview" class="mt-2">
-                    <img src="../../../../public/storage/sistema/dadosClinica.png" class="">
+                    <img src="../../../../public/sistema/dadosClinica.png" class="">
                 </div>
             </div>
         </div>

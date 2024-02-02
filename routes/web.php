@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\ConvenioController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -37,6 +38,11 @@ Route::middleware([
         return Inertia::render('Agenda/Index');
     })->name('agenda');
 
+    // Route::get('/clinica/convenio', function () {
+    //     return Inertia::render('Clinica/Convenio');
+    // })->name('convenio');
+
     Route::get('/company', [CompanyController::class, 'index'])->name('company');
-    Route::get('/dashboard', [Dashboard::class, 'graphic'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'graphic'])->name('dashboard');
+    Route::get('/clinica/convenio', [ConvenioController::class, 'index'])->name('convenio');
 });

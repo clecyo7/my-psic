@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class Dashboard extends Controller
+class DashboardController extends Controller
 {
     public function graphic()
     {

@@ -66,4 +66,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function convenios()
+    {
+        return $this->belongsToMany(Convenio::class);
+    }
 }
